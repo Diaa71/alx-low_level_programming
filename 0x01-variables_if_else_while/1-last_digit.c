@@ -8,7 +8,7 @@
 #include <stdio.h>
 
 /**
- * main - Displays the final digit of a random number 
+ * main - Displays the final digit of a random number
  * and if it's >5, <6, or 0.
  *
  * Return: Always 0.
