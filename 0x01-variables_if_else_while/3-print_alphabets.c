@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 /**
- * main - Displays the lowercase alphabet followed by the 
+ * main - Displays the lowercase alphabet followed by the
  * uppercase alphabet.
  *
  * Return: Always 0.
