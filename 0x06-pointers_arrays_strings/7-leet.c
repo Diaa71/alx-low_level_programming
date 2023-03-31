@@ -1,28 +1,27 @@
 #include "main.h"
-
 /**
- * leet - is the starting node
- * ONE if, and is double looped 
- * @n: input
- * Return: Always 0 
+ * leet - changing the vowel letters to nums
+ * @s: the string is analyzed 
+ *
+ * Return: the string that contains all the changes vowels
  */
-char *leet(char *n)
+char *leet(char *s)
 {
-	int i, x;
-	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	int replacer[] = {'4', '3', '0', '7', '1'};
+	char a[] = "aeotlAEOTL";
+	char n[] = "4307143071";
+	int i = 0;
+	int j;
 
-	for (i = 0; n[i] != '\0'; i++)
+	while (*(s + i) != '\0')
 	{
-		for (x = 0; x <= 9; x++)
+		for (j = 0; j <= 9; j++)
 		{
-			if (n[i] == find[x])
+			if (*(s + i) == a[j])
 			{
-				n[i] = replacer[x / 2];
-				x = 9;
+				*(s + i) = n[j];
 			}
 		}
+		i++;
 	}
-
-	return (n);
+	return (s);
 }
