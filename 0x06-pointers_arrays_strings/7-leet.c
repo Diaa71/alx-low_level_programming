@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * leet - the string is converted from vowels to nums 
- * @str: the string to start with 
+ * leet - Takes the string that is going to be modified and changed from vowels to nums 
+ * @str: The operation string 
  *
- * Return: contains the modified string 
+ * Return: The final string
  */
 char *leet(char *str)
 {
