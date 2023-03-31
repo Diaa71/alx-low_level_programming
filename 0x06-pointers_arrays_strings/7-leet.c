@@ -1,18 +1,29 @@
-#include "main.h"
-#include <stdio.h>
-
+#include "holberton.h"
 /**
- * main - checking the code for converting vowels to nums with the specified strings
+ * leet - the string is converted from vowels to nums 
+ * @str: the string to start with 
  *
- * Return: Always 0.
+ * Return: contains the modified string 
  */
-int main(void)
+char *leet(char *str)
 {
-    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
-    char *p;
+  int i, j;
+  char c[] = "aAeEoOtTlL";
+  char n[] = "4433007711";
 
-    p = leet(s);
-    printf("%s", p);
-    printf("%s", s);
-    return (0);
+  i = 0;
+  while (str[i] != '\0')
+    {
+      j = 0;
+      while (c[j] != '\0')
+	{
+	  if (str[i] == c[j])
+	    {
+	      str[i] = n[j];
+	    }
+	  j++;
+	}
+      i++;
+    }
+  return (str);
 }
